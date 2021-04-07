@@ -89,9 +89,9 @@ class NormalizedStr:
         to stay normalized.
         Therefore, you must renormalize the strings after adding them together.
         '''
-        updated_b = unicodedata.normalize(self.form, str(b))
-        result = unicodedata.normalize(self.form, self.text + updated_b)
-        return NormalizedStr(result, self.form)
+        new_b = unicodedata.normalize(self.form, str(b))
+        final = unicodedata.normalize(self.form, self.text + new_b)
+        return NormalizedStr(final, self.form)
 
     def __iter__(self):
         '''
