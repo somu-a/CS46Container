@@ -102,17 +102,17 @@ class NormalizedStr:
         with the appropriate magic methods,
         and return an instance of that class here.
         '''
-        return NormalizedStrIter(self.text)
+        return NormalizedIter(self.text)
 
 
-class NormalizedStrIter:
+class NormalizedIter:
     def __init__(self, text):
         self.text = text
-        self.ind = 0
+        self.i = 0
 
     def __next__(self):
-        if self.ind >= len(self.text):
+        if self.i >= len(self.text):
             raise StopIteration
         else:
-            self.ind += 1
-            return self.text[self.ind - 1]
+            self.i += 1
+            return self.text[self.i - 1]
