@@ -31,7 +31,7 @@ class NormalizedStr:
         that can be substituted directly into the python
         interpreter to reproduce an equivalent object.
         '''
-        return "NormalizedStr(\'{}\',\'{}\')".format(self.text, self.form)
+        return "NormalizedStr(\'{}\', \'{}\')".format(self.text, self.form)
 
     def __str__(self):
         '''
