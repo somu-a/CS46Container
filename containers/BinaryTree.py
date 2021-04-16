@@ -148,7 +148,7 @@ class BinaryTree():
         if start:
             traversal += [start.value]
             traversal = self.preorder(start.left, traversal)
-            traversal = self.preorder(start.right, traversal) 
+            traversal = self.preorder(start.right, traversal)
         return traversal
 
     def inorder(self, start, traversal):
