@@ -59,6 +59,7 @@ class BST(BinaryTree):
         then compare those sorted lists for equality.
         '''
         return self.to_list('inorder') == t2.to_list('inorder')
+
     def is_bst_satisfied(self):
         '''
         Whenever you implement a data structure,
