@@ -22,7 +22,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run linter
         run: |
-          pip install flake8
+          pip install flake8 pep8naming
           flake8 containers/Heap.py --ignore=E501
       - name: Run tests
         run: |
