@@ -78,7 +78,7 @@ class Heap(BinaryTree):
         elif not node.right and node.left:
             return node.value <= node.left.value
         elif node.value <= node.left.value and node.value <= node.right.value:
-                return Heap._is_heap_satisfied(node.right) and Heap._is_heap_satisfied(node.left)
+            return Heap._is_heap_satisfied(node.right) and Heap._is_heap_satisfied(node.left)
         else:
             return False
 
