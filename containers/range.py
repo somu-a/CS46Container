@@ -39,6 +39,10 @@ def range(a, b=None, c=None):
     if b is None:
         start = 0
         end = a
+<<<<<<< HEAD
+=======
+
+>>>>>>> heap
     else:
         start = a
         end = b
